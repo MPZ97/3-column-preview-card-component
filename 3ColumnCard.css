@@ -1,0 +1,233 @@
+/*------ Table of Contents */
+
+/* body */
+A {
+  text-decoration: none;
+}
+:root {
+  --sedan-background: hsl(31, 77%, 52%);
+  --suv-background: hsl(184, 100%, 22%);
+  --lux-background: hsl(179, 100%, 13%); 
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --background-color: hsl(0, 0%, 95%);
+  --heading-color: hsl(0, 0%, 95%);
+  --button-color: hsl(0, 0%, 95%);
+  --heading-font: Big Shoulders Display, sans-serif;
+  --paragraph-font: Lexend Deca, sans-serif;
+  --paragraph-size: 15px;
+  --heading-weight: 700;
+  --paragraph-weight: 200;
+}
+html,
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2.5rem 0rem 2.5rem 0rem;
+}
+/* ------------------ */
+/* main */
+main {
+  background-color: transparent;
+  margin: 0;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0px;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+/* ------------------ */
+/* text */
+h1 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  box-sizing: border-box;
+  font-weight: var(--heading-weight);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  box-sizing: border-box;
+  font-size: var(--paragraph-size);
+  font-weight: var(--paragraph-weight);
+  line-height: 1.5rem;
+}
+/* ------------------ */
+/* button */
+.learnMoreBtn {
+  display: inline-block;
+  background-color: var(--button-color);
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: var(--paragraph-size);
+  font-family: var(--paragraph-font);
+  border: none;
+  border-radius: 2rem;
+  border-style: solid;
+  border-width: 0px;
+  outline: none;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+.learnMoreBtn:hover {
+  color: var(--button-color);
+  border-style: solid;
+  box-shadow: 0 0 0 2px var(--button-color) inset;
+  border-color: var(--button-color);
+  background-color: transparent;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  box-sizing: border-box;
+}
+.sedanBtnColor {
+  color: var(--sedan-background);
+  box-sizing: border-box;
+}
+.suvBtnColor {
+  color: var(--suv-background);
+  box-sizing: border-box;
+}
+.luxBtnColor {
+  color: var(--lux-background);
+  box-sizing: border-box;
+}
+/* ------------------ */
+/* boxes */ 
+.box {
+  padding: 2.5rem 2rem 2.5rem 2.5rem;
+  box-sizing: border-box;
+}
+/* ------------------ */
+/* sedan */
+.sedan {
+  background-color: var(--sedan-background);
+  box-sizing: border-box;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+/* icon sedan */
+.iconSedan {
+  background-image: url("icon-sedans.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  height: 32px;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+/* ------------------ */
+/* suv */
+.suv {
+  background-color: var(--suv-background);
+  box-sizing: border-box;
+}
+/* icon suv */
+.iconSuv {
+  background-image: url("icon-suvs.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  height: 32px;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+/* ------------------ */
+/* luxury */
+.luxury {
+  background-color: var(--lux-background);
+  box-sizing: border-box;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+/* icon luxury */
+.iconLuxury {
+  background-image: url("icon-luxury.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  height: 32px;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+/* ------------------ */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 375px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html,
+  body {
+    margin: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3rem 0rem 3rem 0rem;
+  }
+  /* ------------------ */
+  /* main */
+  main {
+    margin: auto;
+    width: 62%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  /* ------------------ */
+  /* sedan */
+  .sedan {
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  /* ------------------ */
+  /* luxury */
+  .luxury {
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  /* ------------------ */
+  /* button */
+  .learnMoreBtn {
+    margin-top: 4rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+  html,
+  body {
+    margin: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4.5rem 0rem 4.5rem 0rem;
+  }
+  /* ------------------ */
+  /* main */
+  main {
+    margin: auto;
+    width: 62%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  /* ------------------ */
+  .learnMoreBtn {
+    margin-top: 4rem;
+  }
+
+}
